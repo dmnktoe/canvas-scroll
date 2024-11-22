@@ -1,7 +1,5 @@
 "use client";
 
-import Image from "next/image";
-
 import CanvasScrollClip from "canvas-scroll-clip";
 import React, {useEffect, useRef} from "react";
 
