@@ -9,8 +9,8 @@ export default function Home() {
   useEffect(() => {
     if (ref.current) {
       new CanvasScrollClip(ref.current, {
-        framePath: "https://www.healform.de/clip3/my-film-000001.jpg",
-        frameCount: 349,
+        framePath: "https://www.healform.de/clip4/my-film-000001.jpg",
+        frameCount: 360,
         scrollArea: 2000,
       });
     }
