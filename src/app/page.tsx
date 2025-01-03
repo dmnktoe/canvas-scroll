@@ -14,7 +14,7 @@ export default function Home() {
   useEffect(() => {
     if (ref.current) {
       new CanvasScrollClip(ref.current, {
-        framePath: "http://abc.robinroecker.de/Main/MainAnim-0001.jpg",
+        framePath: "https://abc.robinroecker.de/Main/MainAnim-0001.jpg",
         frameCount: 390,
         scrollArea: 6000,
       });
@@ -25,7 +25,7 @@ export default function Home() {
   useEffect(() => {
     if (ref2.current) {
       new CanvasScrollClip(ref2.current, {
-        framePath: "http://abc.robinroecker.de/NewClip/newclip-0001.jpg",
+        framePath: "https://abc.robinroecker.de/NewClip/newclip-0001.jpg",
         frameCount: 360,
         scrollArea: 4000,
       });
@@ -36,7 +36,7 @@ export default function Home() {
   useEffect(() => {
     if (ref3.current) {
       new CanvasScrollClip(ref3.current, {
-        framePath: "http://abc.robinroecker.de/NewClip2/newclip2-00001.jpg",
+        framePath: "https://abc.robinroecker.de/NewClip2/newclip2-00001.jpg",
         frameCount: 160,
         scrollArea: 2000,
       });
