@@ -5,38 +5,18 @@ import React, { useEffect, useRef } from "react";
 
 export default function Home() {
   const ref = useRef(null);
-  const ref2 = useRef(null);
-  const ref3 = useRef(null);
 
   useEffect(() => {
     if (ref.current) {
       new CanvasScrollClip(ref.current, {
-        framePath: "https://abc.robinroecker.de/Main/MainAnim-0001.jpg",
+        framePath: "/images/MainSmoke/MainSmoke-0000001.jpg",
         frameCount: 390,
         scrollArea: 4000,
       });
     }
   }, []);
 
-  useEffect(() => {
-    if (ref2.current) {
-      new CanvasScrollClip(ref2.current, {
-        framePath: "https://abc.robinroecker.de/NewClip/newclip-0001.jpg",
-        frameCount: 360,
-        scrollArea: 2000,
-      });
-    }
-  }, []);
-
-  useEffect(() => {
-    if (ref3.current) {
-      new CanvasScrollClip(ref3.current, {
-        framePath: "https://abc.robinroecker.de/SmokeBase/SmokeBase-00001.jpg",
-        frameCount: 100,
-        scrollArea: 2000,
-      });
-    }
-  }, []);
+  
 
   return (
     <div className="items-center justify-items-center font-[family-name:var(--font-geist-sans)] antialiased bg-black">
@@ -74,7 +54,7 @@ export default function Home() {
         <div className="items-center w-full" ref={ref}></div>
 
         <div
-          className="container mx-auto flex flex-col sm:flex-row content-center w-full pb-16 bg-violet-300 rounded-xl h-auto bg-[url('https://abc.robinroecker.de/Main/MainAnim-0222.jpg')] bg-cover bg-fixed bg-center-center"
+          className="container mx-auto flex flex-col sm:flex-row content-center w-full pb-16 bg-violet-300 rounded-xl h-auto"
           id="home"
         >
           <div className="w-full p-40">
@@ -103,7 +83,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="items-center w-full pb-32" ref={ref2}></div>
+     
 
         <div className="container mx-auto flex flex-col sm:flex-row content-center w-full pb-16 bg-orange-300 rounded-lg h-auto">
           <div className="w-full p-40">
@@ -121,7 +101,7 @@ export default function Home() {
             </h3>
           </div>
         </div>
-        <div className="items-center w-full p-32" ref={ref3}></div>
+       
 
         <div className="container mx-auto flex flex-col sm:flex-row content-center w-full pb-16 bg-green-100 rounded-2xl h-auto">
           <div className="w-full p-40">
